@@ -7,6 +7,14 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --blue: #0065fc;
+    --light-blue: #deebff;
+    --grey: lightgrey;
+    --dark-grey: dimgrey;
+    --light-grey: #f2f2f2;
+    --white: white;
+    --green-fluo: #39ff14;
+    --black: #000000;
 }
 
 .fa-solid {
@@ -16,11 +24,13 @@
 body {
     display: flex;
     justify-content: center;
+    margin:0px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -57,6 +67,44 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/*********** Header ***********/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    height: 20px;
+    padding-top: 15px;
+  }
+  
+  .logo img {
+    height: 100%;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+  }
+  
+  .little-menu {
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+    border-top-width: 3px;
+    border-color: var(--white);
+    border-top-style: solid;
+  }
+  
+  .little-menu:hover {
+    padding-top: 20px;
+    color: var(--blue);
+    border-top: var(--blue);
+    border-top-style: solid;
+    border-top-width: 3px;
+  }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -121,7 +169,18 @@ a {
     margin-bottom: 5px;
 }
 
+/********** Footer **********/
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--light-grey);
+  margin-top: 60px;
+}
 
+.footer .row {
+  width: 33%;
+  padding-left: 30px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

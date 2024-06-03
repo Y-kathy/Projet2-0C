@@ -103,7 +103,6 @@ a {
   border-top-width: 3px;
 }
 
-
 /*********** Section de recherche ***********/
 .search-section {
   height: 7%;
@@ -165,6 +164,7 @@ button .search-text {
 button .fa-magnifying-glass {
   position: absolute;
 }
+
 
 /*********** Filters ***********/
 .filters {
@@ -290,7 +290,7 @@ button .fa-magnifying-glass {
 }
 
 .hebergements-cards .card-content {
-  width: 67%;
+  width: 100%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -382,7 +382,6 @@ button .fa-magnifying-glass {
   padding-left: 10px;
 }
 
-
 /********** Footer **********/
 .footer {
   display: flex;
@@ -396,10 +395,9 @@ button .fa-magnifying-glass {
   padding-left: 30px;
 }
 
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/********** Media queries **********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
@@ -419,6 +417,18 @@ button .fa-magnifying-glass {
 
   .hebergements-cards {
     justify-content: space-around;
+  }
+
+  .hebergements-cards a {
+    width: 30%;
+  }
+
+  .hebergements-cards .card {
+    width: 100%;
+  }
+
+  .hebergements-cards .card-subtitle {
+    font-size: 12px;
   }
 
   .populaires {
@@ -444,7 +454,6 @@ button .fa-magnifying-glass {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-
 
   .activites {
     width: 100%;
@@ -495,10 +504,16 @@ button .fa-magnifying-glass {
 
   .search-section {
     width: 320px;
+    height: 3%;
   }
 
   .search-bar {
     justify-content: space-between;
+  }
+
+  .icon-info {
+    margin-bottom: 0px;
+    width: 320px;
   }
 
   form button {
@@ -571,6 +586,10 @@ button .fa-magnifying-glass {
   }
 
   #hebergements {
+    width: 100%;
+  }
+
+  .hebergements-cards a {
     width: 100%;
   }
 
